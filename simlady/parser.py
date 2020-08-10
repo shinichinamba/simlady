@@ -103,7 +103,7 @@ def get_argument_parser_lady():
     parser.add_argument("--write-weights", action="store_true", help="Write out the weights matrix as a tab-delimited file. The file name will be OUTPUT_PREFIX.weights.txt.")
 
     parser.add_argument("--threads", "-T", metavar="INT", type=int, default=1,
-        help="Number of threads. (default= %(default)s)")
+        help="Number of threads. Increasing the number of threads makes the processing faster at the expense of larger memory requirement (default= %(default)s)")
         
     parser.add_argument("--save-memory", action="store_true", help="For saving memory, provoke multiprocessing only for calculating weight matrix and not for generating reads.")
         

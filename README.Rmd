@@ -1,0 +1,47 @@
+---
+title: "README"
+author: "S Namba"
+date: "`r Sys.Date()`"
+output:
+  md_document: 
+    variant: markdown_github
+---
+
+# simlady
+
+SIMulator for Long read transcriptome Analysis with RNA DecaY model
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, comment = "")
+```
+
+
+## Installation
+
+```{bash install, eval=FALSE}
+git clone https://github.com/shinichinamba/simlady.git
+cd simlady
+pip3 install .
+```
+
+
+## Usage
+
+```{bash help_code, eval=FALSE}
+simlady --help
+```
+
+```{bash help, echo=FALSE}
+export PATH=$HOME/.local/bin:$PATH
+simlady --help
+```
+
+
+## Error model
+
+Simlady uses the Pacific Biosciences SMRT error model which is implemented in [SimLoRD](https://bitbucket.org/genomeinformatics/simlord/src/master/).
+
+
+## Citation
+
+S Namba *et al*. Multi-sample Full-length Transcriptome Analysis of 22 Breast Cancer Clinical Specimens with Long-Read Sequencing. ***BioRxiv*** (2020) https://doi.org/10.1101/2020.07.15.199851
